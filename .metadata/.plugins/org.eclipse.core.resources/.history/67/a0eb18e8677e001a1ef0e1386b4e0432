@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+void DecimalNumberToBinary(int decimal_number){
+	if(decimal_number < 2){
+		printf("%d" , decimal_number);
+	}
+	else{
+		DecimalNumberToBinary(decimal_number / 2);
+		printf("%d", decimal_number % 2);
+	}
+}
+
+int Recursive_one_type(int base, int degree){
+	if(degree == 1){
+		return base;
+	}
+	else if(degree == 0){
+		return 1;
+	}
+	else{
+		return base * Recursive_one_type(base, degree - 1);
+	}
+}
+
+int main(void) {
+	DecimalNumberToBinary(126);
+	printf("\n%d", Recursive_one_type(2, 25));
+	return 0;
+}
