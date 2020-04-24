@@ -1,8 +1,14 @@
+LaunchTargetManager/configs/Arrays.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Array\u044B=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/Recursion.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:Recursion.exe
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Recursion.exe,org.eclipse.launchbar.core.descriptorType.default\:Big number ariphmetics.exe,org.eclipse.launchbar.core.descriptorType.default\:Arrays.exe
 eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Arrays.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Arrays.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Big\ number\ ariphmetics.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Big\ number\ ariphmetics.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:Recursion.exe/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:Recursion.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

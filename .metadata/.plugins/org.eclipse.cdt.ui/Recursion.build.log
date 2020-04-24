@@ -1,11 +1,7 @@
-22:12:44 **** Incremental Build of configuration Debug for project Recursion ****
+00:16:59 **** Incremental Build of configuration Debug for project Recursion ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Recursion.o" "..\\src\\Recursion.c" 
-..\src\Recursion.c: In function 'routes':
-..\src\Recursion.c:61:13: warning: suggest parentheses around comparison in operand of '^' [-Wparentheses]
-   61 |   else if(x == 0 ^ y == 0){
-      |           ~~^~~~
 gcc -o Recursion.exe "src\\Recursion.o" 
 
-22:12:44 Build Finished. 0 errors, 1 warnings. (took 361ms)
+00:17:00 Build Finished. 0 errors, 0 warnings. (took 422ms)
 

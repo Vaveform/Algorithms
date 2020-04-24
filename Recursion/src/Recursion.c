@@ -52,22 +52,17 @@ int Recursive_optimization(int base, int degree){
 
 int routes(int y, int x, int** obstacles){
 	// if we found on current position obstacle return 0
-	if(obstacles[y][x] == 1){
+	// In task said that our king start from top left position (0,0)
+	if(x == 0 && y == 0){
+		return 0;
+	}
+	// For every position top side and left side of table we have one way
+	else if(obstacles[y][x] == 1){
 		return 0;
 	}
 	else{
-		// In task said that our king start from top left position (0,0)
-		if(x == 0 && y == 0){
-			return 0;
-		}
-		// For every position top side and left side of table we have one way
-		else if(x == 0 ^ y == 0){
-			return 1;
-		}
-		else{
-			// Calculate recursively number of ways for current position
-			return routes(y - 1, x, obstacles) + routes(y, x - 1, obstacles);
-		}
+		// Calculate recursively number of ways for current position
+		return routes(y - 1, x, obstacles) + routes(y, x - 1, obstacles);
 	}
 }
 
@@ -79,15 +74,21 @@ int main(void) {
 	printf("\n%d\n", Recursive_optimization(2, 10));
 
 	//Third part of task
-	const int x_size = 5;
-	const int y_size = 5;
+	const int x_size = 6;
+	const int y_size = 6;
 	// Dynamic allocation for array with obstacles
 	int** obstacles = (int **)malloc(y_size * sizeof(int*));
 	printf("Obstacles mask:\n");
 	for(int i = 0; i < y_size; i++){
 		obstacles[i] = (int *)malloc(x_size * sizeof(int));
 		for(int j = 0; j < x_size; j++){
-			if(i == j){
+			if(i == 0 && j == 2){
+				obstacles[i][j] = 1;
+			}
+			else if(i == 2 && j == 1){
+				obstacles[i][j] = 1;
+			}
+			else if(i == 2 && j == 2){
 				obstacles[i][j] = 1;
 			}
 			else{
