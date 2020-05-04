@@ -13,3 +13,9 @@ void ShakerSort(int* array, int len);
 void SelectionSort(int* array, int len);
 
 void CountingSort(int* array, int len ,int max_value);
+
+void QSort(int* array, int len);
+
+void ImprQSort(int* array, int len);
+
+void bucketSort(int* array, int len);

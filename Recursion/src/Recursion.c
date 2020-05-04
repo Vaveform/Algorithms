@@ -52,17 +52,31 @@ int Recursive_optimization(int base, int degree){
 
 int routes(int y, int x, int** obstacles){
 	// if we found on current position obstacle return 0
-	// In task said that our king start from top left position (0,0)
-	if(x == 0 && y == 0){
-		return 0;
-	}
-	// For every position top side and left side of table we have one way
-	else if(obstacles[y][x] == 1){
+	if(obstacles[y][x] == 1){
 		return 0;
 	}
 	else{
-		// Calculate recursively number of ways for current position
-		return routes(y - 1, x, obstacles) + routes(y, x - 1, obstacles);
+		// In task said that our king start from top left position (0,0)
+		if(x == 0 && y == 0){
+			return 0;
+		}
+		// For every position top side and left side of table we have
+		else if(x == 0 && y != 1){
+				return 1 * routes(y - 1, x, obstacles);
+		}
+		else if(x == 0 && y == 1){
+				return obstacles[y][x] == 1 ? 0 : 1;
+		}
+		else if(y == 0 && x != 1){
+				return 1 * routes(y, x - 1, obstacles);
+		}
+		else if(y == 0 && x == 1){
+				return obstacles[y][x] == 1 ? 0 : 1;
+		}
+		else{
+			// Calculate recursively number of ways for current position
+			return routes(y - 1, x, obstacles) + routes(y, x - 1, obstacles);
+		}
 	}
 }
 

@@ -104,3 +104,98 @@ void CountingSort(int* array, int len, int max_value){
 }
 
 
+void qs(int* array, int first, int second){
+	int i = first;
+	int j = second;
+
+	int pivot = array[(first + second) / 2];
+
+	do{
+		while(array[i] < pivot){
+			i++;
+		}
+		while(array[j] > pivot){
+			j--;
+		}
+		if(j >= i){
+			swap(&array[i], &array[j]);
+			i++;
+			j--;
+		}
+	}while(j >= i);
+
+	if(i < second){
+		qs(array, i, second);
+	}
+	if(j > first){
+		qs(array, first, j);
+	}
+}
+
+void imprQS(int* array, int first, int second){
+	// Selection sort if number of elements smaller than 11
+	if(second - first < 11){
+		for(int i = first; i < second; ++i){
+			int j = i;
+			while(j > first && array[j - 1] > array[j]){
+				swap(&array[j - 1], &array[j]);
+				j--;
+			}
+		}
+	}
+	// Find median of free elements and recursive QSort
+	else{
+		int begin = array[first];
+		int median = array[(first + second) / 2];
+		int end = array[second];
+
+		// Find pivot
+		if(begin > median) swap(&begin, &median);
+		if(median > end) swap(&median, &end);
+		if(begin > median) swap(&begin, &median);
+
+		array[(first + second) / 2] = median;
+
+		qs(array, first, second);
+
+	}
+}
+
+
+void QSort(int* array, int len){
+	int first = 0;
+	int second = len - 1;
+	qs(array, first, second);
+}
+
+void ImprQSort(int* array, int len){
+	int first = 0;
+	int second = len - 1;
+	imprQS(array, first, second);
+}
+
+void bucketSort(int* arr, int len) {
+    const int max = len;
+    const int b = 10;
+
+    int buckets[b][max+1];
+    for (int i = 0; i < b; ++i) {
+        buckets[i][max] = 0;
+    }
+
+
+    for (int digit = 1; digit < 1000000000; digit*=10) {
+        for (int i = 0; i < max; ++i) {
+            int d = (arr[i] / digit) % b;
+            buckets[d][buckets[d][max]++] = arr[i];
+        }
+        int idx = 0;
+        for (int i = 0; i < b; ++i) {
+            for (int j = 0; j < buckets[i][max]; ++j) {
+                arr[idx++] = buckets[i][j];
+            }
+            buckets[i][max] = 0;
+        }
+    }
+}
+

@@ -292,3 +292,536 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c"
    11 |  int* array = initArray(array, size);
       |               ^~~~~~~~~~~~~~~~~~~~~~
 gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+12:33:18 **** Rebuild of configuration Debug for project Recursion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Recursion.o" "..\\src\\Recursion.c" 
+..\src\Recursion.c: In function 'routes':
+..\src\Recursion.c:64:13: warning: suggest parentheses around comparison in operand of '^' [-Wparentheses]
+   64 |   else if(x == 0 ^ y == 0){
+      |           ~~^~~~
+gcc -o Recursion.exe "src\\Recursion.o" 
+12:34:43 **** Incremental Build of configuration Debug for project Recursion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Recursion.o" "..\\src\\Recursion.c" 
+..\src\Recursion.c: In function 'routes':
+..\src\Recursion.c:64:13: warning: suggest parentheses around comparison in operand of '^' [-Wparentheses]
+   64 |   else if(x == 0 ^ y == 0){
+      |           ~~^~~~
+gcc -o Recursion.exe "src\\Recursion.o" 
+12:53:48 **** Incremental Build of configuration Debug for project Recursion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Recursion.o" "..\\src\\Recursion.c" 
+..\src\Recursion.c: In function 'routes':
+..\src\Recursion.c:64:13: warning: suggest parentheses around comparison in operand of '^' [-Wparentheses]
+   64 |   else if(x == 0 ^ y == 0){
+      |           ~~^~~~
+..\src\Recursion.c:83:1: warning: control reaches end of non-void function [-Wreturn-type]
+   83 | }
+      | ^
+gcc -o Recursion.exe "src\\Recursion.o" 
+12:57:44 **** Incremental Build of configuration Debug for project Recursion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Recursion.o" "..\\src\\Recursion.c" 
+gcc -o Recursion.exe "src\\Recursion.o" 
+16:25:26 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:15:2: error: too few arguments to function 'qsort'
+   15 |  qsort(array, size, 1000);
+      |  ^~~~~
+In file included from ..\src\Arrays.c:2:
+C:/dev/x86_64-w64-mingw32/include/stdlib.h:435:16: note: declared here
+  435 |   void __cdecl qsort(void *_Base,size_t _NumOfElements,size_t _SizeOfElements,int (__cdecl *_PtFuncCompare)(const void *,const void *));
+      |                ^~~~~
+16:25:34 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:15:2: error: too few arguments to function 'qsort'
+   15 |  qsort(array, size);
+      |  ^~~~~
+In file included from ..\src\Arrays.c:2:
+C:/dev/x86_64-w64-mingw32/include/stdlib.h:435:16: note: declared here
+  435 |   void __cdecl qsort(void *_Base,size_t _NumOfElements,size_t _SizeOfElements,int (__cdecl *_PtFuncCompare)(const void *,const void *));
+      |                ^~~~~
+16:25:44 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:15:2: error: too few arguments to function 'qsort'
+   15 |  qsort(array);
+      |  ^~~~~
+In file included from ..\src\Arrays.c:2:
+C:/dev/x86_64-w64-mingw32/include/stdlib.h:435:16: note: declared here
+  435 |   void __cdecl qsort(void *_Base,size_t _NumOfElements,size_t _SizeOfElements,int (__cdecl *_PtFuncCompare)(const void *,const void *));
+      |                ^~~~~
+16:58:36 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+16:58:46 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+16:59:05 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+16:59:18 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+Info: Nothing to build for Arrays
+Info: Nothing to build for Arrays
+17:18:36 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+17:18:42 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+17:18:53 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:20:57 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:21:30 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:21:35 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:21:40 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:21:55 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:23:25 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:23:44 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:25:29 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:28:44 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:29:01 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:32:28 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:32:48 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:42:27 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:43:03 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:52:34 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:53:04 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:54:11 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:54:17 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:54:21 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:54:24 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:54:28 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:54:32 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:54:39 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:54:49 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:55:50 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:55:56 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:56:03 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+Info: Nothing to build for Arrays
+Info: Nothing to build for Arrays
+21:56:19 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+Info: Nothing to build for Arrays
+Info: Nothing to build for Arrays
+21:56:28 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:56:39 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:56:50 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:57:02 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+21:59:37 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+22:00:35 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+22:00:45 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+22:00:53 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+Info: Nothing to build for Arrays
+22:01:04 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+Info: Nothing to build for Arrays
+Info: Nothing to build for Arrays
+Info: Nothing to build for Arrays
+Info: Nothing to build for Arrays
+22:01:26 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+22:01:52 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+22:01:56 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+22:02:08 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+22:10:57 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:15:2: warning: implicit declaration of function 'buckerSort'; did you mean 'bucketSort'? [-Wimplicit-function-declaration]
+   15 |  buckerSort(array, size);
+      |  ^~~~~~~~~~
+      |  bucketSort
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+C:/dev/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\Arrays.o: in function `main':
+E:\Algorithms\Arrays\Debug/../src/Arrays.c:15: undefined reference to `buckerSort'
+collect2.exe: error: ld returned 1 exit status
+22:11:11 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:11:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   11 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+22:12:22 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:21:2: warning: implicit declaration of function 'fillIntRandom' [-Wimplicit-function-declaration]
+   21 |  fillIntRandom(arr, SZ, 100);
+      |  ^~~~~~~~~~~~~
+..\src\Arrays.c:22:2: warning: implicit declaration of function 'printIntArray'; did you mean 'printArray'? [-Wimplicit-function-declaration]
+   22 |  printIntArray(arr, SZ, 3);
+      |  ^~~~~~~~~~~~~
+      |  printArray
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+C:/dev/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\Arrays.o: in function `main':
+E:\Algorithms\Arrays\Debug/../src/Arrays.c:21: undefined reference to `fillIntRandom'
+C:/dev/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: E:\Algorithms\Arrays\Debug/../src/Arrays.c:22: undefined reference to `printIntArray'
+C:/dev/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: E:\Algorithms\Arrays\Debug/../src/Arrays.c:24: undefined reference to `printIntArray'
+collect2.exe: error: ld returned 1 exit status
+22:13:08 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:22:2: warning: implicit declaration of function 'printIntArray'; did you mean 'printArray'? [-Wimplicit-function-declaration]
+   22 |  printIntArray(arr, SZ, 3);
+      |  ^~~~~~~~~~~~~
+      |  printArray
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+C:/dev/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\Arrays.o: in function `main':
+E:\Algorithms\Arrays\Debug/../src/Arrays.c:22: undefined reference to `printIntArray'
+C:/dev/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: E:\Algorithms\Arrays\Debug/../src/Arrays.c:24: undefined reference to `printIntArray'
+collect2.exe: error: ld returned 1 exit status
+22:13:11 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+C:/dev/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\Arrays.o: in function `main':
+E:\Algorithms\Arrays\Debug/../src/Arrays.c:22: undefined reference to `printIntArray'
+C:/dev/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: E:\Algorithms\Arrays\Debug/../src/Arrays.c:24: undefined reference to `printIntArray'
+collect2.exe: error: ld returned 1 exit status
+22:13:23 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:22:2: error: too many arguments to function 'printArray'
+   22 |  printArray(arr, SZ, 3);
+      |  ^~~~~~~~~~
+In file included from ..\src\Arrays.c:4:
+..\src\ArraysFunctions.h:19:6: note: declared here
+   19 | void printArray(int* array, int len);
+      |      ^~~~~~~~~~
+..\src\Arrays.c:24:2: warning: implicit declaration of function 'printIntArray'; did you mean 'printArray'? [-Wimplicit-function-declaration]
+   24 |  printIntArray(arr, SZ, 3);
+      |  ^~~~~~~~~~~~~
+      |  printArray
+22:13:39 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+22:16:02 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+22:18:03 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SortFunctions.o" "..\\src\\SortFunctions.c" 
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+22:18:26 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:10:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   10 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 
+22:18:32 **** Incremental Build of configuration Debug for project Arrays ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Arrays.o" "..\\src\\Arrays.c" 
+..\src\Arrays.c: In function 'main':
+..\src\Arrays.c:10:15: warning: 'array' is used uninitialized in this function [-Wuninitialized]
+   10 |  int* array = initArray(array, size);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+gcc -o Arrays.exe "src\\Arrays.o" "src\\ArraysFunctions.o" "src\\SearchFunctions.o" "src\\SortFunctions.o" 

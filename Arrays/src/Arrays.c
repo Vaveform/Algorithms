@@ -5,15 +5,14 @@
 #include "SortFunctions.h"
 #include "SearchFunctions.h"
 
-
 int main(void) {
-	const int size = 300000;
+	const int size = 30;
 	int* array = initArray(array, size);
-	fillArrayRandomNumbers(array, size, 0, 1000);
-	//printArray(array, size);
+	fillArrayRandomNumbers(array, size, 0, 100);
+	printArray(array, size);
 	double start = clock();
-	CountingSort(array, size, 1000);
+	bucketSort(array, size);
 	printf("%.4lf\n", (clock() - start));
-	//printArray(array, size);
+	printArray(array, size);
 	freeArray(array);
 }
